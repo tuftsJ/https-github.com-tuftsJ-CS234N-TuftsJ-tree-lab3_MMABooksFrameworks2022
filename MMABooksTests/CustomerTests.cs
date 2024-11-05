@@ -12,6 +12,8 @@ using System;
 using MySql.Data.MySqlClient;
 
 namespace MMABooksTests
+
+    //still working on everything. 
 {
     [TestFixture]
     public class CustomerTests
