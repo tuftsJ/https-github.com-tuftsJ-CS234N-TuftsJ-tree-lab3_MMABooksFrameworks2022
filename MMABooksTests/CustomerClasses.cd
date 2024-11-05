@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MMABooksTools.BaseSQLDB" Collapsed="true">
+    <Position X="5" Y="2.5" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MMABooksTools.BaseBusiness" Collapsed="true">
+    <Position X="1.75" Y="2.5" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MMABooksDB.CustomerDB">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MMABooksBusiness.Customer" Collapsed="true">
+    <Position X="2" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="MMABooksTools.IReadDB">
+    <Position X="3.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="MMABooksTools.IWriteDB">
+    <Position X="6.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="MMABooksTools.IBaseProps">
+    <Position X="8.25" Y="2.5" Width="2.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="8.83" />
+</ClassDiagram>
