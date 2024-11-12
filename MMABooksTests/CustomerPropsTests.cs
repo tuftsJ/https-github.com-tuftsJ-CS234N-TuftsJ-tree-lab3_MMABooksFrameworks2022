@@ -2,6 +2,7 @@ using NUnit.Framework;
 
 using MMABooksProps;
 using System;
+using NuGet.Frameworks;
 
 namespace MMABooksTests
 {
@@ -13,11 +14,13 @@ namespace MMABooksTests
         public void Setup()
         {
             props = new CustomerProps();
-            props.CustomerID = "11";
-            props.Name = "This is a test";
-            props.CustomerCity = "Eugene";
-            props.CustomerPhone = "1234567890";
-            props.CustomerCountry = "USA";
+            props.CustomerID = "1";
+            props.Name = "Mickey Mouse";
+            props.Address = "101 Main St.";
+            props.City = "Orlando";
+            props.State = "Florida";
+            props.ZipCode = "10001";
+            
         }
 
         [Test]
@@ -25,7 +28,7 @@ namespace MMABooksTests
         {
             string jsonString = props.GetCustomer();
             Console.WriteLine(jsonString);
-            Assert.IsTrue(jsonString.Contains(props.CustomerID));
+            Assert.IsTrue(jsonString.Contains(props.Address));
             Assert.IsTrue(jsonString.Contains(props.Name));
         }
 
@@ -37,7 +40,11 @@ namespace MMABooksTests
             newProps.SetState(jsonString);
             Assert.AreEqual(props.CustomerID, newProps.CustomerID);
             Assert.AreEqual(props.Name, newProps.Name);
-            Assert.AreEqual(props.CustomerPhone, newProps.CustomerPhone);
+            Assert.AreEqual(props.Address, newProps.Address);
+            Assert.AreEqual(props.City, newProps.City);
+            Assert.AreEqual(props.State, newProps.State);
+            Assert.AreEqual(props.ZipCode, newProps.ZipCode);
+            Assert.AreEqual(props.ConcurrencyID, newProps.ConcurrencyID);
         }
 
         [Test]

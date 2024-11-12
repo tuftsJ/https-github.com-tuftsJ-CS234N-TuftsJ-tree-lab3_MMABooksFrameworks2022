@@ -32,8 +32,8 @@ namespace MMABooksTests
             CustomerProps p = (CustomerProps)db.Retrieve("01");
             Assert.AreEqual("01", p.CustomerID);
             Assert.AreEqual("John Doe", p.Name);
-            Assert.AreEqual("Eugene", p.CustomerCity);
-            Assert.AreEqual("Ore", p.CustomerPhone);
+            Assert.AreEqual("Eugene", p.City);
+            Assert.AreEqual("Ore", p.State);
         }
 
         [Test]

@@ -78,12 +78,12 @@ namespace MMABooksBusiness
         {
             get
             {
-                return ((CustomerProps)mProps).CustomerPhone;
+                return ((CustomerProps)mProps).Address;
             }
 
             set
             {
-                if (!(value == ((CustomerProps)mProps).CustomerPhone))
+                if (!(value == ((CustomerProps)mProps).Address))
                 {
                     if (value.Trim().Length >= 1 && value.Trim().Length <= 20)
                     {
@@ -100,16 +100,16 @@ namespace MMABooksBusiness
             }
         }
         
-        public string CustomerCity 
+        public string City 
         {
             get
             {
-                return ((CustomerProps)mProps).CustomerCity;
+                return ((CustomerProps)mProps).City;
             }
             
             set
             {
-                if (!(value == ((CustomerProps)mProps).CustomerCity))
+                if (!(value == ((CustomerProps)mProps).City))
                 {                    
                 }
                 else
@@ -119,16 +119,16 @@ namespace MMABooksBusiness
             }
         }
 
-        public string CustomerCountry
+        public string State
         {
             get
             {
-                return (((CustomerProps)mProps).CustomerCountry);
+                return (((CustomerProps)mProps).State);
             }
 
             set
             {
-                if (!(value == (((CustomerProps)mProps).CustomerCountry)))
+                if (!(value == (((CustomerProps)mProps).State)))
                 {
                 }
                 else 
