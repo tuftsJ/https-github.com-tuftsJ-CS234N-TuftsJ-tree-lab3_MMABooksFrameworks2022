@@ -13,16 +13,4 @@
     <PackageReference Include="MySql.Data" Version="8.0.30" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="mySqlSettings.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="mySqlSettingsExample - Copy.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="mySqlSettings.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
